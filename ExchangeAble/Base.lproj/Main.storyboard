@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="z0a-JP-Zz8">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Table View Controller-->
+        <scene sceneID="jyx-WK-pwt">
+            <objects>
+                <tableViewController id="z0a-JP-Zz8" customClass="TableViewController" customModule="ExchangeAble" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="WzT-7L-PFU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textField key="tableHeaderView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="itH-eC-q8u">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="TXo-Ax-V8B" customClass="TableViewCell" customModule="ExchangeAble" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="58" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="TXo-Ax-V8B" id="YQh-ax-ZUn">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="EJ7-L9-zh0">
+                                            <rect key="frame" x="16" y="11" width="343" height="22"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please Wait" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JL3-ps-tRl">
+                                                    <rect key="frame" x="0.0" y="0.0" width="164" height="22"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Getting Data" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3gm-Sm-yUm">
+                                                    <rect key="frame" x="164" y="0.0" width="179" height="22"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="3gm-Sm-yUm" firstAttribute="leading" secondItem="JL3-ps-tRl" secondAttribute="trailing" id="0eJ-x1-6TM"/>
+                                                <constraint firstItem="JL3-ps-tRl" firstAttribute="leading" secondItem="EJ7-L9-zh0" secondAttribute="leading" id="9ec-g1-tZJ"/>
+                                                <constraint firstItem="JL3-ps-tRl" firstAttribute="top" secondItem="EJ7-L9-zh0" secondAttribute="top" id="Iux-e4-zdt"/>
+                                                <constraint firstItem="3gm-Sm-yUm" firstAttribute="leading" secondItem="JL3-ps-tRl" secondAttribute="trailing" id="M9D-r0-kar"/>
+                                                <constraint firstItem="3gm-Sm-yUm" firstAttribute="top" secondItem="EJ7-L9-zh0" secondAttribute="top" id="RZ1-QM-Xvx"/>
+                                                <constraint firstAttribute="bottom" secondItem="3gm-Sm-yUm" secondAttribute="bottom" id="bcT-Me-8fP"/>
+                                                <constraint firstAttribute="trailing" secondItem="3gm-Sm-yUm" secondAttribute="trailing" id="snL-7d-Mto"/>
+                                                <constraint firstAttribute="bottom" secondItem="JL3-ps-tRl" secondAttribute="bottom" id="to9-nv-oBl"/>
+                                            </constraints>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="EJ7-L9-zh0" firstAttribute="top" secondItem="YQh-ax-ZUn" secondAttribute="topMargin" id="mQL-8v-xv4"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="EJ7-L9-zh0" secondAttribute="bottom" id="qU4-5b-Sa9"/>
+                                        <constraint firstItem="EJ7-L9-zh0" firstAttribute="leading" secondItem="YQh-ax-ZUn" secondAttribute="leadingMargin" id="xWy-DV-SmG"/>
+                                        <constraint firstItem="EJ7-L9-zh0" firstAttribute="trailing" secondItem="YQh-ax-ZUn" secondAttribute="trailingMargin" id="zJ9-44-0Vr"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="Currency" destination="JL3-ps-tRl" id="aeL-xT-A8S"/>
+                                    <outlet property="Rate" destination="3gm-Sm-yUm" id="Vps-3W-IKq"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="z0a-JP-Zz8" id="LkV-hL-AOs"/>
+                            <outlet property="delegate" destination="z0a-JP-Zz8" id="mr6-QW-sfN"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <outlet property="tables" destination="WzT-7L-PFU" id="h4B-7M-oru"/>
+                        <outlet property="userCurrency" destination="itH-eC-q8u" id="QSu-XI-w9q"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6A0-RP-S52" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="89" y="45"/>
+        </scene>
+    </scenes>
+</document>
